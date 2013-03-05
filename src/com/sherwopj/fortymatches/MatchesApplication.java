@@ -20,7 +20,7 @@ public class MatchesApplication extends Application {
     	PreferenceManager.setDefaultValues(this, R.xml.preference, true);
     	SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(this);
     	
-    	Log.d("MatchesApplication", "SP.getAll().size():"+SP.getAll().size());
+    	Log.d("MatchesApplication", "SP.getAll().size() :"+SP.getAll().size());
     	Log.d("MatchesApplication",SP.getAll().keySet().toString());
 
 		

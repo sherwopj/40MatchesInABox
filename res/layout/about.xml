@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scoreView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutTitle"
+        android:textColor="@color/black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/aboutParagraph1"
+        android:layout_below="@+id/aboutTitle" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutParagraph1"
+        android:textColor="@color/black"  >
+    </TextView>
+    <TextView
+        android:id="@+id/aboutParagraph2"
+        android:layout_below="@+id/aboutParagraph1" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutParagraph2"
+        android:textColor="@color/black"  >
+    </TextView>
+    <TextView
+        android:id="@+id/aboutParagraph3"
+        android:layout_below="@+id/aboutParagraph2" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutParagraph3"
+        android:textColor="@color/black"  >
+    </TextView>
+    <TextView
+        android:id="@+id/aboutScoreTitle"
+        android:layout_below="@+id/aboutParagraph3" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutScoreTitle"
+        android:textColor="@color/black"  >
+    </TextView>
+    <TextView
+        android:id="@+id/aboutScore"
+        android:layout_below="@+id/aboutScoreTitle" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aboutScore"
+        android:textColor="@color/black"  >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutScore"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rosette" />
+        
+</RelativeLayout>

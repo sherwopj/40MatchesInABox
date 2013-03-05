@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="#fffffe"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:gravity="center_vertical">
+    <TextView android:text="@string/how_many" android:id="@+id/editText1" android:layout_alignParentTop="true" android:layout_height="wrap_content" android:layout_width="fill_parent" android:gravity="center_horizontal"></TextView>
+    <Button android:layout_width="wrap_content" android:id="@+id/button1" android:layout_below="@+id/editText1" android:text="#" android:layout_alignLeft="@+id/editText1" android:layout_alignRight="@+id/editText1" android:layout_height="wrap_content" android:layout_margin="10dp" android:height="40dp" android:onClick="button1Clicked"></Button>
+    <Button android:layout_width="wrap_content" android:id="@+id/button2" android:layout_below="@+id/button1" android:text="#" android:layout_alignLeft="@+id/button1" android:layout_alignRight="@+id/button1" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:height="40dp" android:onClick="button2Clicked"></Button>
+    <Button android:layout_width="wrap_content" android:id="@+id/button3" android:layout_below="@+id/button2" android:text="#" android:layout_alignLeft="@+id/button2" android:layout_alignRight="@+id/button2" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:height="40dp" android:onClick="button3Clicked"></Button>
+    <Button android:layout_width="wrap_content" android:id="@+id/button4" android:layout_below="@+id/button3" android:text="#" android:layout_alignLeft="@+id/button3" android:layout_alignRight="@+id/button3" android:layout_height="wrap_content" android:height="40dp" android:onClick="button4Clicked"></Button>
+</RelativeLayout>

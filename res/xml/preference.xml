@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:persistent="true">
+        <CheckBoxPreference
+                android:title="easy_level_unlocked"
+                android:defaultValue="true"
+                android:summary="Enable / disable easy level"
+                android:key="easy_level_unlocked" />
+        <CheckBoxPreference
+                android:title="hard_level_unlocked"
+                android:defaultValue="false"
+                android:summary="Enable / disable hard level"
+                android:key="hard_level_unlocked" />
+        <CheckBoxPreference
+                android:title="harder_level_unlocked"
+                android:defaultValue="false"
+                android:summary="Enable / disable harder level"
+                android:key="harder_level_unlocked" />
+        <CheckBoxPreference
+                android:title="rainman_level_unlocked"
+                android:defaultValue="false"
+                android:summary="Enable / disable rainman level"
+                android:key="rainman_level_unlocked" />
+        <CheckBoxPreference
+                android:title="all_levels_completed"
+                android:defaultValue="false"
+                android:summary="Have all levels been unlocked"
+                android:key="all_levels_completed" />
+        <CheckBoxPreference
+                android:title="total number of correct guesses"
+                android:defaultValue="0"
+                android:summary="how many guesses have been made"
+                android:key="total_number_of_correct_guesses" />
+        <CheckBoxPreference
+                android:title="total number of incorrect guesses"
+                android:defaultValue="0"
+                android:summary="how many guesses have been made"
+                android:key="total_number_of_incorrect_guesses" />
+</PreferenceScreen>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">40 Matches In A Box</string>
+    <string name="btn_exit">exit</string>
+    <string name="btn_ready">ready?</string>
+    <string name="how_many">How Many?</string>
+    <string name="btn_easy">easy</string>
+    <string name="btn_hard">hard</string>
+    <string name="btn_harder">harder</string>
+    <string name="btn_locked">- Locked -</string>
+    <string name="btn_rainman">Rain Man</string>
+    <string name="score">Score!</string>
+    <string name="scoreTitle">Your Score</string>
+    <string name="try_again">try again</string>
+    <string name="menu">menu</string>
+    <string name="touchToContinue">Touch To Continue…</string>
+    <string name="btn_about">about</string>
+    <string name="levelunlockedimage">levelUnlockedImage</string>
+    <string name="btn_play">play</string>
+    <string name="aboutTitle">40 Matches In A Box</string>
+    <string name="aboutParagraph1">A dog knows that two bones are better than one, a goldfish that there are more food flakes in this pinch than that…\'40 Matches In A Box\' is a game designed to help us aspire to such insight.</string>
+    <string name="aboutParagraph2">The inspiration came when watching the classic film \'Rainman\' (starring Tom Cruise and Dustin Hoffman (featured)). Why can the chap with high functioning Asperger\'s syndrome count so incredibly quickly? I wonder if it is possible to learn to do so.</string>
+    <string name="aboutParagraph3">The results of preliminary trials remain inconclusive, though trial candidates have shown a marked increase in head size and have become more attractive to the opposite sex.</string>
+    <string name="aboutScoreTitle">Score (correct guesses/total guesses): </string>
+    <string name="aboutScore">0%</string>
+
+</resources>

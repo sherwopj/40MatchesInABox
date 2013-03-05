@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#000000">
+	<Button android:id="@+id/ButtonNewEasyGame" android:layout_centerHorizontal="true" android:background="@drawable/easy_button" android:layout_width="175dip" android:onClick="easyGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_easy" android:layout_marginTop="20dip" android:textSize="24sp" android:layout_margin="10dip"></Button>    
+	<Button android:id="@+id/ButtonNewHardGame" android:layout_centerHorizontal="true" android:background="@drawable/hard_button" android:layout_width="175dip" android:onClick="hardGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_hard" android:textSize="24sp" android:layout_below="@+id/ButtonNewEasyGame" android:layout_margin="10dip"></Button>
+	<Button android:id="@+id/ButtonNewHarderGame" android:layout_centerHorizontal="true" android:background="@drawable/harder_button" android:layout_width="175dip" android:onClick="harderGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_harder" android:textSize="24sp" android:layout_below="@+id/ButtonNewHardGame" android:layout_margin="10dip"></Button>
+	<Button android:id="@+id/ButtonNewRainmanGame" android:layout_centerHorizontal="true" android:background="@drawable/rainman_button" android:layout_width="175dip" android:onClick="rainmanGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_rainman" android:textSize="24sp" android:layout_below="@+id/ButtonNewHarderGame" android:layout_margin="10dip"></Button>
+
+	<ImageView
+	    android:id="@+id/rosette"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:visibility="invisible"
+	    android:src="@drawable/rosette" 
+	    android:contentDescription="rosette displayed when all levels are completed"/>
+
+</RelativeLayout>
+</ScrollView>

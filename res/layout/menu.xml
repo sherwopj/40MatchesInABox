@@ -3,8 +3,11 @@
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#000000">
+    <RelativeLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:background="#000000">
 	<Button android:id="@+id/ButtonNewEasyGame" android:layout_centerHorizontal="true" android:background="@drawable/easy_button" android:layout_width="175dip" android:onClick="easyGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_easy" android:layout_marginTop="20dip" android:textSize="24sp" android:layout_margin="10dip"></Button>    
 	<Button android:id="@+id/ButtonNewHardGame" android:layout_centerHorizontal="true" android:background="@drawable/hard_button" android:layout_width="175dip" android:onClick="hardGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_hard" android:textSize="24sp" android:layout_below="@+id/ButtonNewEasyGame" android:layout_margin="10dip"></Button>
 	<Button android:id="@+id/ButtonNewHarderGame" android:layout_centerHorizontal="true" android:background="@drawable/harder_button" android:layout_width="175dip" android:onClick="harderGameButtonClicked" android:textStyle="bold" android:layout_height="60dip" android:text="@string/btn_harder" android:textSize="24sp" android:layout_below="@+id/ButtonNewHardGame" android:layout_margin="10dip"></Button>

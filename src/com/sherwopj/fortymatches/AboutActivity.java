@@ -1,5 +1,7 @@
 package com.sherwopj.fortymatches;
 
+import java.text.DecimalFormat;
+
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -34,14 +36,16 @@ public class AboutActivity extends Activity {
 		
 		TextView aboutScoreTextView = (TextView) findViewById(R.id.aboutScore);
 		
-		int correctGuesses = SP.getInt("total_number_of_correct_guesses", 0);
-		int incorrectGuesses = SP.getInt("total_number_of_incorrect_guesses", 0);
-		int scorePercent = 1;
+		double correctGuesses = Integer.valueOf(SP.getString("total_number_of_correct_guesses", "0"));
+		Log.i(this.getLocalClassName(), "correctGuesses: "+correctGuesses);
+		double incorrectGuesses = Integer.valueOf(SP.getString("total_number_of_incorrect_guesses", "0"));
+		Log.i(this.getLocalClassName(), "incorrectGuesses: "+incorrectGuesses);
+		String scorePercent = "0";
 		if(correctGuesses>0 || incorrectGuesses>0){
-			scorePercent = (correctGuesses/(correctGuesses+incorrectGuesses))*100;
+			scorePercent = new DecimalFormat("##.##").format((correctGuesses/(correctGuesses+incorrectGuesses))*100);
 		}			
 		Log.i(this.getLocalClassName(), "scorePercent: "+scorePercent);
-		aboutScoreTextView.setText(String.valueOf(scorePercent)+"%");
+		aboutScoreTextView.setText(scorePercent+"%");
 		
 		
 		
@@ -49,7 +53,6 @@ public class AboutActivity extends Activity {
 			//Give the man a medal
 			View rosette = findViewById(R.id.rosette);
 			rosette.setVisibility(View.VISIBLE);
-			
 		}
 		
 		

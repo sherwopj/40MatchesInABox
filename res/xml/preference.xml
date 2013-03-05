@@ -25,12 +25,12 @@
                 android:defaultValue="false"
                 android:summary="Have all levels been unlocked"
                 android:key="all_levels_completed" />
-        <CheckBoxPreference
+        <EditTextPreference
                 android:title="total number of correct guesses"
                 android:defaultValue="0"
                 android:summary="how many guesses have been made"
                 android:key="total_number_of_correct_guesses" />
-        <CheckBoxPreference
+        <EditTextPreference
                 android:title="total number of incorrect guesses"
                 android:defaultValue="0"
                 android:summary="how many guesses have been made"

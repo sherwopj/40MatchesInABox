@@ -68,13 +68,14 @@
         android:textColor="@color/black"  >
     </TextView>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/aboutScore"
-        android:visibility="invisible"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/rosette" />
-        
+	<ImageView
+	    android:id="@+id/rosette"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:visibility="invisible"
+	    android:src="@drawable/rosette" 
+	    android:contentDescription="rosette displayed when all levels are completed"/>
+	
 </RelativeLayout>

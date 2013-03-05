@@ -18,6 +18,7 @@ public class Game extends Activity {
 	private Intent gamePanelActivity;
 	private int correctCount;
 	private int gameCount;
+	private int NUMBER_OF_ROUNDS = 3;
 
 	/** Called when the activity is first created. */
     @Override
@@ -43,7 +44,7 @@ public class Game extends Activity {
     	int height = display.getHeight();
     	Log.i(this.getLocalClassName(),"Resuming...: ");
     	Log.d(this.getLocalClassName(), "width: "+width+" height: "+height);
-    	if(gameCount<5) {
+    	if(gameCount<NUMBER_OF_ROUNDS) {
     		setContentView(R.layout.game);
     		gamePanelActivity = new Intent(Game.this, GamePanelActivity.class);
     		gamePanelActivity.putExtra("width", width);
@@ -112,11 +113,9 @@ public class Game extends Activity {
 		
         
         if(resultCode == 1) {
-        	
         	correctCount++;
-    		gameCount++;
-        	
         }
+        gameCount++;
         
         Log.i(this.getLocalClassName(), "correctCount: "+correctCount);
     }
